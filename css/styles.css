@@ -278,3 +278,88 @@ a {
   }
 }
 /*************** end of services **********************/
+/*************** featured **********************/
+.featured {
+  background: var(--mainWhite);
+}
+.trail-card {
+  margin-bottom: 4rem;
+  box-shadow: var(--lightShadow);
+  transition: var(--mainTransition);
+}
+.trail-card:hover {
+  box-shadow: var(--darkShadow);
+}
+.trail-img-container {
+  position: relative;
+}
+.textWithBlurredBg:hover img {
+  -webkit-filter: blur(2px) brightness(60%);
+  filter: blur(2px) brightness(60%);
+  -webkit-box-shadow: 0 0 16px var(--primaryColor);
+  box-shadow: 0 0 16px var(--primaryColor);
+}
+
+.textWithBlurredBg :not(img) {
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.textWithBlurredBg h3 {
+  top: 50%;
+}
+
+.textWithBlurredBg:hover :not(img) {
+  opacity: 1;
+}
+
+.trail-footer {
+  padding: 1.2rem 1.5rem;
+}
+.trail-title {
+  text-transform: capitalize;
+}
+.trail-country {
+  color: var(--primaryColor);
+  text-transform: capitalize;
+}
+.trail-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.trail-details p {
+  line-height: 0.2;
+  text-transform: capitalize;
+  color: var(--darkGrey);
+  letter-spacing: 0.02rem;
+}
+.trail-country {
+  align-self: center;
+}
+.trail-link {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .featured-center {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .trail-card {
+    flex: 0 0 calc(50% - 1rem);
+  }
+}
+@media screen and (min-width: 1170px) {
+  .trail-card {
+    flex: 0 0 calc(33.3333% - 1rem);
+  }
+}
+/*************** end of featured **********************/
