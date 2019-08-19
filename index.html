@@ -33,8 +33,37 @@
     <!-- header -->
     <header id="home">
       <!-- navbar -->
-      <nav></nav>
-      <!-- hero component -->
+      <nav class="navbar">
+        <div class="nav-center">
+          <!-- nav header -->
+          <div class="nav-header">
+            <img src="./images/logo.png" class="nav-logo" alt="hiking Adventures" />
+             <button type="button" class="nav-toggle" id="nav-toggle" aria-label="nav toggler">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <!-- end of navbar header -->
+          <!-- navbar links -->
+          <div class="nav-links " id="nav-links">
+            <a href="#home" class="nav-link scroll-link">home</a>
+            <a href="#about" class="nav-link scroll-link">about</a>
+            <a href="#services" class="nav-link scroll-link">services</a>
+            <a href="#featured" class="nav-link scroll-link">featured</a>
+            <a href="#gallery" class="nav-link scroll-link">gallery</a>
+          </div>
+          <!-- end of navbar links -->
+          <!-- nav social media icons -->
+          <div class="nav-icons">
+            <a href="https://www.twitter.com" target="_blank" class="nav-icon">
+              <i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com" target="_blank" class="nav-icon">
+              <i class="fab fa-twitter"></i></a>
+            <a href="https://www.twitter.com" target="_blank" class="nav-icon">
+              <i class="fab fa-squarespace"></i></a>
+          </div>
+        </div>
+      </nav>
+      <!-- hero  -->
       <div class="hero">
         <div class="hero-banner">
           <h1 class="hero-title">make the most of nature</h1>
@@ -145,14 +174,11 @@
         <article class="trail-card">
           <!-- img container -->
           <div class="trail-img-container">
-            <div class="textWithBlurredBg">
               <img
                 src="./images/trail-1.jpeg"
                 class="trail-img"
                 alt="trail-1"
               />
-              <h3>download map</h3>
-            </div>
           </div>
           <!-- trail footer -->
           <div class="trail-footer">
@@ -175,14 +201,11 @@
         <article class="trail-card">
           <!-- img container -->
           <div class="trail-img-container">
-            <div class="textWithBlurredBg">
               <img
                 src="./images/trail-2.jpeg"
                 class="trail-img"
                 alt="trail-2"
               />
-              <h3>download map</h3>
-            </div>
           </div>
           <!-- trail footer -->
           <div class="trail-footer">
@@ -205,14 +228,11 @@
         <article class="trail-card">
           <!-- img container -->
           <div class="trail-img-container">
-            <div class="textWithBlurredBg">
               <img
                 src="./images/trail-3.jpeg"
                 class="trail-img"
                 alt="trail-3"
               />
-              <h3>download map</h3>
-            </div>
           </div>
           <!-- trail footer -->
           <div class="trail-footer">
@@ -235,14 +255,11 @@
         <article class="trail-card">
           <!-- img container -->
           <div class="trail-img-container">
-            <div class="textWithBlurredBg">
               <img
                 src="./images/trail-4.jpeg"
                 class="trail-img"
                 alt="trail-4"
               />
-              <h3>download map</h3>
-            </div>
           </div>
           <!-- trail footer -->
           <div class="trail-footer">
@@ -256,6 +273,52 @@
               <div class="trail-details">
                 <p></p>
                 <p>12 miles</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- end of single trail -->
+        <!-- single trail -->
+        <article class="trail-card">
+          <!-- img container -->
+          <div class="trail-img-container">
+              <img src="./images/trail-5.jpeg" class="trail-img" alt="trail-5" />
+          </div>
+          <!-- trail footer -->
+          <div class="trail-footer">
+            <h4 class="trail-title">trail five</h4>
+            <!-- trail info -->
+            <div class="trail-info">
+              <p class="trail-country">
+                <span><i class="fas fa-map"></i></span>
+                map
+              </p>
+              <div class="trail-details">
+                <p></p>
+                <p>15 miles</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- end of single trail -->
+        <!-- single trail -->
+        <article class="trail-card">
+          <!-- img container -->
+          <div class="trail-img-container">
+              <img src="./images/trail-6.jpeg" class="trail-img" alt="trail-6" />
+          </div>
+          <!-- trail footer -->
+          <div class="trail-footer">
+            <h4 class="trail-title">trail six</h4>
+            <!-- trail info -->
+            <div class="trail-info">
+              <p class="trail-country">
+                <span><i class="fas fa-map"></i></span>
+                map
+              </p>
+              <div class="trail-details">
+                <p></p>
+                <p>10 miles</p>
               </div>
             </div>
           </div>
@@ -434,5 +497,7 @@
     <script>
       baguetteBox.run(".compact-gallery", { animation: "slideIn" });
     </script>
+    <!-- custom js -->
+    <script src="./js/app.js"></script>
   </body>
 </html>
